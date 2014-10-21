@@ -1,0 +1,6 @@
+graylog:
+  image:  sjoerdmulder/graylog2
+  environment:
+    GRAYLOG2_PASSWORD: password
+web:
+  build: .
