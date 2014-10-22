@@ -4,3 +4,6 @@ graylog:
     GRAYLOG2_PASSWORD: password
 web:
   build: .
+  ports:
+    - "9292:9292"
+

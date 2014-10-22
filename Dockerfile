@@ -39,3 +39,9 @@ RUN apt-get update && \
 ADD Gemfile /web_app/Gemfile
 ADD Gemfile.lock /web_app/Gemfile.lock
 RUN bundle install
+
+ADD docker /
+
+ADD . /web_app
+
+
