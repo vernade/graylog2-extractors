@@ -1,9 +1,11 @@
-graylog:
+graylog2:
   image:  sjoerdmulder/graylog2
   environment:
     GRAYLOG2_PASSWORD: password
 web:
   build: .
+  links:
+    - graylog2
   ports:
     - "9292:9292"
 

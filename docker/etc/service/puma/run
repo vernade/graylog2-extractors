@@ -3,4 +3,4 @@
 exec 2>&1
 cd /web_app
 
-exec puma
+exec puma --dir /web_app --environment production
